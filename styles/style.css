@@ -124,3 +124,43 @@ body {
     width: 100px;
     height: 100px;
 }
+
+.featured-books h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.flex-conteiner-freatured{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    color: black;
+}
+
+.featured-cards{
+    background-color: #fff;
+    width: 260px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 2px 8px #091117;
+    transition: 0.2s;
+}
+
+.featured-cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px #091117;
+}
+
+.featured-cards h3, p {
+    padding: 15px;
+}
+
+.featured-cards img{
+    height: 230px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
