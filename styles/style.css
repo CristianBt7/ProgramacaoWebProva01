@@ -274,3 +274,124 @@ label{
     background-color: #ddd;
     color: #333;
 }
+
+footer {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    gap: 0.8rem;
+}
+
+footer a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px){
+    .genres-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .featured-cards {
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 768px){
+    .genres-cards{
+        grid-template-columns:  repeat(2, 1fr);
+    }
+    .featured-cards {
+        width: 48%;
+    }
+    #contact form {
+        grid-template-columns: 1fr;
+    }
+    textarea,
+    fieldset,
+    .buttons {
+        grid-column: 1;
+    }
+    .presentation-content {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+  .header h1 {
+    font-size: 1rem;
+  }
+
+  #contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .form-group:nth-child(-n+3) {
+        grid-column: span 1;
+    }
+
+    fieldset,
+    .full-width,
+    .buttons {
+        grid-column: 1 / span 3;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: flex-start;
+        gap: 1rem 1.5rem;    
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .buttons button {
+        width: auto;
+        min-width: 150px;
+    }
+    
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+        padding: 2rem;
+    }
+    footer p {
+        flex-basis: 30%;
+    }
+}
+
+@media (max-width: 480px){
+    .genres-cards{
+        grid-template-columns: 1fr;
+    }
+    .featured-cards {
+        width: 100%;
+    }
+
+}
